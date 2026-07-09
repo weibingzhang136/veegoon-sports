@@ -1,34 +1,74 @@
 import Link from "next/link";
-import Logo from "@/components/branding/Logo";
+
 import Button from "@/components/ui/Button";
 
 export default function Header() {
-  const navItems = [
-    { label: "首页", href: "/" },
-    { label: "解决方案", href: "/solutions" },
-    { label: "案例", href: "/cases" },
-    { label: "关于我们", href: "/about" },
-    { label: "联系我们", href: "/contact" },
-  ];
-
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-200 bg-white/80 backdrop-blur">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-        <Logo />
+    <header className="sticky top-0 z-50 w-full border-b border-gray-200/50 bg-white/70 backdrop-blur-xl">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
 
-        <nav className="hidden gap-8 md:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="text-gray-600 transition hover:text-blue-600"
-            >
-              {item.label}
-            </Link>
-          ))}
+        {/* Logo */}
+        <Link
+          href="/"
+          className="text-xl font-bold tracking-tight text-gray-900"
+        >
+          Veegoon Sports
+        </Link>
+
+
+        {/* Navigation */}
+        <nav className="hidden items-center gap-10 md:flex">
+
+          <Link
+            href="/"
+            className="text-sm font-medium text-gray-600 transition hover:text-blue-600"
+          >
+            首页
+          </Link>
+
+
+          <Link
+            href="/solutions"
+            className="text-sm font-medium text-gray-600 transition hover:text-blue-600"
+          >
+            解决方案
+          </Link>
+
+
+          <Link
+            href="/products"
+            className="text-sm font-medium text-gray-600 transition hover:text-blue-600"
+          >
+            产品
+          </Link>
+
+
+          <Link
+            href="/cases"
+            className="text-sm font-medium text-gray-600 transition hover:text-blue-600"
+          >
+            案例
+          </Link>
+
+
+          <Link
+            href="/about"
+            className="text-sm font-medium text-gray-600 transition hover:text-blue-600"
+          >
+            关于我们
+          </Link>
+
         </nav>
 
-        <Button>预约演示</Button>
+
+        {/* CTA */}
+        <div>
+          <Button>
+            预约演示
+          </Button>
+        </div>
+
+
       </div>
     </header>
   );

@@ -1,7 +1,7 @@
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import Badge from "@/components/ui/Badge";
-
+import Button from "@/components/ui/Button";
 export default function Hero() {
   return (
     <Section className="relative overflow-hidden bg-white">
@@ -24,12 +24,12 @@ export default function Hero() {
         </p>
 
         <div className="mt-12 flex flex-col gap-4 sm:flex-row">
-          <button className="rounded-full bg-blue-600 px-8 py-4 font-medium text-white transition hover:bg-blue-700">
-            预约演示
-          </button>
+          <Button>
+           预约演示
+          </Button>
 
           <button className="rounded-full border border-gray-300 px-8 py-4 font-medium transition hover:bg-gray-100">
-            了解解决方案
+           了解解决方案
           </button>
         </div>
 
