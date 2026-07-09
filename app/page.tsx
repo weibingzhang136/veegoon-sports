@@ -1,3 +1,4 @@
+import Cases from "@/components/home/Cases";
 import Products from "@/components/home/Products";
 import Solutions from "@/components/home/Solutions";
 import AISportsVision from "@/components/home/AISportsVision";
@@ -17,6 +18,8 @@ export default function Home() {
       <Solutions />
 
       <Products />
+
+      <Cases />
     </>
   );
 }
