@@ -1,0 +1,29 @@
+<svg width="900" height="200" viewBox="0 0 900 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
+<rect width="200" height="200" rx="45" fill="#0B1020"></rect>
+
+
+<path d="
+M45 45
+L85 150
+C90 165 110 165 115 150
+L155 45
+" stroke="#0066FF" stroke-width="28" stroke-linecap="round"></path>
+
+
+<text x="250" y="125" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#0B1020">
+
+Veegoon
+
+</text>
+
+
+<text x="250" y="170" font-family="Arial, sans-serif" font-size="34" fill="#0066FF">
+
+SPORTS
+
+</text>
+
+
+</svg>

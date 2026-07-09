@@ -17,8 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Veegoon Sports",
-  description: "Building the Digital Infrastructure for Sports",
+  title: "Veegoon Sports | AI Sports Technology",
+  description:
+    "Veegoon Sports builds digital infrastructure for sports through AI, data intelligence, and smart stadium technology.",
 };
 
 export default function RootLayout({
