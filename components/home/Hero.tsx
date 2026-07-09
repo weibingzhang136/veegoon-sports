@@ -1,3 +1,4 @@
+import Motion from "@/components/ui/Motion";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import Badge from "@/components/ui/Badge";
@@ -44,10 +45,14 @@ blur-3xl
 
           <div className="relative z-10">
 
-            <Badge>
-              AI SPORTS TECHNOLOGY PLATFORM
-            </Badge>
+            <Motion delay={0.2}>
+              <Badge>
+                 AI SPORTS INTELLIGENCE PLATFORM
+              </Badge>
+            </Motion>
 
+
+            <Motion delay={0.4}>
 
             <h1 className="mt-8 text-5xl font-extrabold leading-tight tracking-tight text-gray-900 md:text-7xl">
 
@@ -60,7 +65,10 @@ blur-3xl
               for Sports
 
             </h1>
+            </Motion>
 
+
+            <Motion delay={0.6}>
 
             <p className="mt-8 max-w-xl text-lg leading-8 text-gray-600">
 
@@ -69,7 +77,10 @@ blur-3xl
               打造下一代智能体育基础设施。
 
             </p>
+            </Motion>
 
+
+            <Motion delay={0.8}>
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
@@ -85,62 +96,69 @@ blur-3xl
 
 
             </div>
+            </Motion>
 
 
-            {/* Stats */}
+{/* Stats */}
 
-            <div className="mt-14 grid grid-cols-3 gap-8">
+<Motion delay={1}>
 
-
-              <div>
-                <div className="text-3xl font-bold text-gray-900">
-                  100+
-                </div>
-
-                <div className="mt-1 text-sm text-gray-500">
-                  智慧场馆
-                </div>
-              </div>
+<div className="mt-14 grid grid-cols-3 gap-8">
 
 
+  <div>
+    <div className="text-3xl font-bold text-gray-900">
+      100+
+    </div>
 
-              <div>
-                <div className="text-3xl font-bold text-gray-900">
-                  AI
-                </div>
-
-                <div className="mt-1 text-sm text-gray-500">
-                  智能系统
-                </div>
-              </div>
+    <div className="mt-1 text-sm text-gray-500">
+      Smart Venues
+    </div>
+  </div>
 
 
 
-              <div>
-                <div className="text-3xl font-bold text-gray-900">
-                  24/7
-                </div>
+  <div>
+    <div className="text-3xl font-bold text-gray-900">
+      AI
+    </div>
 
-                <div className="mt-1 text-sm text-gray-500">
-                  数据连接
-                </div>
-              </div>
-
-
-            </div>
-
-
-          </div>
+    <div className="mt-1 text-sm text-gray-500">
+      Sports Intelligence
+    </div>
+  </div>
 
 
 
-          {/* Right Visual */}
+  <div>
+    <div className="text-3xl font-bold text-gray-900">
+      24/7
+    </div>
+
+    <div className="mt-1 text-sm text-gray-500">
+      Data Platform
+    </div>
+  </div>
+
+
+</div>
+
+</Motion>
+
+
+</div>
+
+
+
+{/* Right Visual */}
 
           <div className="relative">
 
-            <HeroVisual />
+             <Motion delay={0.8}>
+               <HeroVisual />
+             </Motion>
 
-          </div>
+</div>
 
 
         </div>

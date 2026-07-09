@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 export default function HeroVisual() {
   return (
     <div className="relative flex h-[560px] w-full items-center justify-center">
@@ -5,16 +7,25 @@ export default function HeroVisual() {
 
       {/* Background Glow */}
 
-      <div
-        className="
-        absolute
-        h-[420px]
-        w-[420px]
-        rounded-full
-        bg-blue-500/20
-        blur-3xl
-        "
-      />
+      <motion.div
+  animate={{
+    scale: [1, 1.08, 1],
+    opacity: [0.5, 0.8, 0.5],
+  }}
+  transition={{
+    duration: 5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="
+  absolute
+  h-[420px]
+  w-[420px]
+  rounded-full
+  bg-blue-500/20
+  blur-3xl
+  "
+/>
 
 
       {/* Digital Field */}
@@ -72,18 +83,44 @@ export default function HeroVisual() {
 
         {/* Detection Box */}
 
-        <div
-          className="
-          absolute
-          left-20
-          top-16
-          h-16
-          w-14
-          rounded-lg
-          border-2
-          border-blue-500
-          "
-        >
+<motion.div
+  animate={{
+    opacity: [0.6, 1, 0.6],
+  }}
+  transition={{
+    duration: 2,
+    repeat: Infinity,
+  }}
+  className="
+  absolute
+  left-20
+  top-16
+  h-16
+  w-14
+  rounded-lg
+  border-2
+  border-blue-500
+  "
+>
+
+    <motion.div
+    animate={{
+      y:[0,55,0],
+    }}
+    transition={{
+      duration:2,
+      repeat:Infinity,
+      ease:"linear",
+    }}
+    className="
+    absolute
+    left-0
+    top-0
+    h-px
+    w-full
+    bg-blue-500
+    "
+  />
 
           <span
             className="
@@ -99,7 +136,7 @@ export default function HeroVisual() {
           </span>
 
 
-        </div>
+        </motion.div>
 
 
 
@@ -129,16 +166,25 @@ export default function HeroVisual() {
         </div>
 
 
-        <div
-          className="
-          mt-2
-          text-3xl
-          font-bold
-          text-gray-900
-          "
-        >
-          98.6%
-        </div>
+        <motion.div
+  animate={{
+    scale: [1, 1.08, 1],
+    opacity: [0.7, 1, 0.7],
+  }}
+  transition={{
+    duration: 2.5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="
+  mt-2
+  text-3xl
+  font-bold
+  text-blue-600
+  "
+>
+  98.6%
+</motion.div>
 
 
         <div
@@ -158,61 +204,79 @@ export default function HeroVisual() {
 
       {/* Floating Card Left */}
 
-      <div
-        className="
-        absolute
-        left-4
-        top-28
-        rounded-2xl
-        border
-        border-gray-100
-        bg-white
-        px-5
-        py-4
-        shadow-xl
-        "
-      >
+      <motion.div
+  animate={{
+    y: [0, -8, 0],
+  }}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="
+  absolute
+  left-4
+  top-28
+  rounded-2xl
+  border
+  border-gray-100
+  bg-white
+  px-5
+  py-4
+  shadow-xl
+  "
+>
 
-        <div className="text-xs text-gray-500">
-          Motion Tracking
-        </div>
+  <div className="text-xs text-gray-500">
+    Motion Tracking
+  </div>
 
 
-        <div className="mt-1 text-lg font-bold text-blue-600">
-          ACTIVE
-        </div>
+  <div className="mt-1 text-lg font-bold text-blue-600">
+    ACTIVE
+  </div>
 
-      </div>
+
+</motion.div>
 
 
 
       {/* Floating Card Right */}
 
-      <div
-        className="
-        absolute
-        bottom-28
-        right-4
-        rounded-2xl
-        border
-        border-gray-100
-        bg-white
-        px-5
-        py-4
-        shadow-xl
-        "
-      >
+    <motion.div
+  animate={{
+    y: [0, 8, 0],
+  }}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+  className="
+  absolute
+  bottom-28
+  right-4
+  rounded-2xl
+  border
+  border-gray-100
+  bg-white
+  px-5
+  py-4
+  shadow-xl
+  "
+>
 
-        <div className="text-xs text-gray-500">
-          Smart Venue
-        </div>
+  <div className="text-xs text-gray-500">
+    Smart Venue
+  </div>
 
 
-        <div className="mt-1 text-lg font-bold text-blue-600">
-          CONNECTED
-        </div>
+  <div className="mt-1 text-lg font-bold text-blue-600">
+    CONNECTED
+  </div>
 
-      </div>
+
+</motion.div>
 
 
 
