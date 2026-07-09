@@ -1,3 +1,4 @@
+import CTA from "@/components/home/CTA";
 import Partners from "@/components/home/Partners";
 import Cases from "@/components/home/Cases";
 import Products from "@/components/home/Products";
@@ -23,6 +24,8 @@ export default function Home() {
       <Cases />
 
       <Partners />
+
+      <CTA />
     </>
   );
 }
