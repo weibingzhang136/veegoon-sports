@@ -1,3 +1,4 @@
+import Partners from "@/components/home/Partners";
 import Cases from "@/components/home/Cases";
 import Products from "@/components/home/Products";
 import Solutions from "@/components/home/Solutions";
@@ -20,6 +21,8 @@ export default function Home() {
       <Products />
 
       <Cases />
+
+      <Partners />
     </>
   );
 }
