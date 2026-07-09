@@ -10,8 +10,29 @@ export default function Hero() {
   return (
     <Section className="relative overflow-hidden bg-white">
 
-      {/* Background Glow */}
-      <div className="absolute left-1/2 top-0 h-[700px] w-[700px] -translate-x-1/2 rounded-full bg-blue-500/10 blur-3xl" />
+      {/* AI Background */}
+
+<div
+className="
+absolute
+inset-0
+bg-[radial-gradient(circle_at_top,rgba(59,130,246,0.15),transparent_40%)]
+"
+/>
+
+
+<div
+className="
+absolute
+right-0
+top-1/3
+h-[500px]
+w-[500px]
+rounded-full
+bg-blue-400/10
+blur-3xl
+"
+/>
 
 
       <Container>
@@ -33,7 +54,7 @@ export default function Hero() {
               Building the Digital
               <br />
 
-              Infrastructure
+              Future
               <br />
 
               for Sports
@@ -43,8 +64,9 @@ export default function Hero() {
 
             <p className="mt-8 max-w-xl text-lg leading-8 text-gray-600">
 
-              微馆体育（Veegoon Sports）致力于通过人工智能、
-              数据智能和数字化技术，打造未来体育产业的智能基础设施。
+              微馆体育（Veegoon Sports）通过人工智能、
+              计算机视觉和数据智能技术，
+              打造下一代智能体育基础设施。
 
             </p>
 
