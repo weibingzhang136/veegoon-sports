@@ -1,3 +1,4 @@
+import Logo from "@/components/branding/Logo";
 import Link from "next/link";
 
 import Button from "@/components/ui/Button";
@@ -7,13 +8,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-gray-200/50 bg-white/70 backdrop-blur-xl">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
 
-        {/* Logo */}
-        <Link
-          href="/"
-          className="text-xl font-bold tracking-tight text-gray-900"
-        >
-          Veegoon Sports
-        </Link>
+      <Logo />
 
 
         {/* Navigation */}
